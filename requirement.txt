@@ -1,0 +1,33 @@
+user module
+admin module
+librarian module
+
+
+
+
+
+
+RECORD
+    RECORD ID
+    USER 
+    BOOK 
+	OUT_DATE
+    DUE_DATE
+    IN_DATE
+
+
+	
+CART 
+    ID	
+    BOOK 
+	TOTAL PRICE
+    quantity
+
+oreder
+   ID
+   BOOK
+   user
+   total_price
+   total_quantity
+
+

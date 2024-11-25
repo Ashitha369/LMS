@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JS -->
+<script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons and JS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+  <style>
+    body {
+        background: url(../asset/img/singin.jpg);
+        background-size: cover;
+    }
+    .back-btn {
+      font-size: 16px;
+      color: black;
+      text-decoration: none;
+      margin-bottom: 20px;
+    }
+
+    .header {
+      text-align: center;
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    .login-container {
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .login-container img {
+      width: 100px;
+      display: block;
+      margin: 20px auto;
+    }
+    .login-container .btn-primary {
+      width: 100%;
+      font-weight: bold;
+    }
+    .login-container a {
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <!-- Back Button -->
+        <a href="../index.html" class=" btn btn-black"><i class="bi bi-arrow-left-short"> Back</i></a>
+    
+        <!-- Header -->
+        <div class="header">
+          Library Management <br> System
+        </div>
+    </div>
+
+<div class="container">
+  <div class="login-container text-center">
+    <form>
+      <div class="mb-3">
+        <input type="email" class="form-control" placeholder="user name">
+      </div>
+      <div class="mb-3">
+        <input type="password" class="form-control" placeholder="Password">
+      </div>
+           <a href="" class="btn btn-primary">sing in</a>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

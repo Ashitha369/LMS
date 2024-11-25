@@ -1,0 +1,90 @@
+body {
+    background-color: #DEC0F1;
+}
+
+.header {
+    text-align: center;
+    margin: 20px 0;
+    font-family: 'Georgia', serif;
+}
+
+.header img {
+    width: 50px;
+}
+
+/* ------- icon -------  */
+
+.m-icon {
+    background: #E4C0E4;
+}
+
+.offcanvas-body a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.offcanvas-body a:hover {
+    color: #BA77BA;
+    text-decoration: underline;
+}
+
+/* ------ featured ------  */
+
+.featured-banner {
+    background-color: #BA77BA;
+    padding: 40px 20px;
+    text-align: center;
+    margin-right: 50px;
+    margin-left: 50px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .featured-banner h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+
+  }
+
+  .carousel-item img {
+    max-width: 100px;
+    height: auto;
+    margin: 0 10px;
+  }
+
+  .button{
+    background-color: #BA77BA;
+    color: white;
+  }
+  .btn-custom {
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+  }
+
+  .btn-custom:hover {
+    background-color: #333;
+  }
+  .card {
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .card img {
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .container {
+    margin-top: 50px;
+  }
+
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}

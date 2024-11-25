@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Store</title>
+    <!-- Bootstrap CSS -->
+    <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- bootstrap icons  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../style.css"> -->
+    <style>
+        .menu-icons {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        .menu-item {
+            padding: 10px 0;
+            border-bottom: 1px solid #BA77BA;
+        }
+
+        .offcanvas-header {
+            background-color: #E4C0E4;
+        }
+
+        .carousel img {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .featured-section {
+            padding: 20px 0;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .card-body p {
+            font-size: 14px;
+            color: gray;
+        }
+
+        .footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid py-3 ">
+        <div class="d-flex align-items-center justify-content-between">
+            <img src="https://img.icons8.com/ios-filled/50/000000/books.png" alt="Library Icon" class="ms-3">
+            <h1 class="text-center flex-grow-1">Library Management <br> System</h1>
+            <span class="me-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                <i class="bi bi-list fs-3"></i>
+            </span>
+        </div>
+    </div>
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="menu-item d-flex align-items-center">
+                <a href="./search.html"> <i class="menu-icons bi bi-search"></i>&nbsp;</a>
+                <a href="./search.html">Search</a>
+            </div><br>
+            <div class="menu-item d-flex align-items-center">
+                <i class="menu-icons bi bi-grid"></i>&nbsp;
+                <span>Categories</span>
+            </div><br>
+            <div class="menu-item d-flex align-items-center">
+                <i class="menu-icons bi bi-person"></i>&nbsp;
+                <span>Profile</span>
+            </div><br>
+            <div class="menu-item d-flex align-items-center">
+                <i class="menu-icons bi bi-bell"></i>&nbsp;
+                <span>Notifications</span>
+            </div><br>
+            <div class="menu-item d-flex align-items-center">
+                <i class="menu-icons bi bi-cart"></i>&nbsp;
+                <span>Cart</span>
+            </div><br>
+        </div>
+    </div>
+
+    <!-- Carousel Section -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                class="active"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../asset/img/bg1.jpg" class="d-block w-100" alt="Books">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Your Source of Premium Books!</h2>
+                    <p>Discover the best books for every taste and interest.</p>
+                    <a href="#" class="btn btn-warning">Shop Now</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../asset/img/bg2.jpg" class="d-block w-100" alt="Library">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Your Source of Premium Books!</h2>
+                    <p>Discover the best books for every taste and interest.</p>
+                    <a href="#" class="btn btn-warning">Shop Now</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../asset/img/bg3.jpg" class="d-block w-100" alt="Reading">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Your Source of Premium Books!</h2>
+                    <p>Discover the best books for every taste and interest.</p>
+                    <a href="#" class="btn btn-warning">Shop Now</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Featured Section -->
+    <div class="container featured-section">
+        <div class="row text-center mb-4">
+            <div class="col-md-4">
+                <div class="card">
+                    <a href=""> <img src="../asset/img/pexels-estefany-pena-468188929-17601658.jpg" class="card-img-top"
+                            alt="Bestsellers"></a>
+                    <div class="card-body">
+                        <h5>featured books</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <a href=""> <img src="../asset/img/gerner.png" class="card-img-top"
+                            alt="Editor's Picks"></a>
+                    <div class="card-body">
+                        <h5>featured gerner</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <a href=""><img src="../asset/img/author.jpeg" class="card-img-top"
+                            alt="Featured Authors"></a>
+                    <div class="card-body">
+                        <h5>Featured Authors</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Products Section -->
+    <div class="container">
+        <h3 class="text-center mb-4">Featured Products</h3>
+        <div class="row">
+            <!-- Product Cards -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../asset/img/23.jpeg" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                        <h5 class="card-title">$258.96</h5>
+                        <p>Book Title Here</p>
+                        <button class="btn btn-warning btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../asset/img/r5.jpeg" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                        <h5 class="card-title">$150.30</h5>
+                        <p>Book Title Here</p>
+                        <button class="btn btn-warning btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../asset/img/r2.jpeg " class="card-img-top" alt="Product">
+                    <div class="card-body">
+                        <h5 class="card-title">$150.30</h5>
+                        <p>Book Title Here</p>
+                        <button class="btn btn-warning btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../asset/img/r6.jpeg " class="card-img-top" alt="Product">
+                    <div class="card-body">
+                        <h5 class="card-title">$150.30</h5>
+                        <p>Book Title Here</p>
+                        <button class="btn btn-warning btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div><br><br>
+        <!-- 2row  -->
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../asset/img/r4.jpeg" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                        <h5 class="card-title">$258.96</h5>
+                        <p>Book Title Here</p>
+                        <button class="btn btn-warning btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../asset/img/thriller6.jpeg" class="card-img-top" alt="Product">
+                    <div class="card-body">
+                        <h5 class="card-title">$150.30</h5>
+                        <p>Book Title Here</p>
+                        <button class="btn btn-warning btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../asset/img/thriller5.jpeg " class="card-img-top" alt="Product">
+                    <div class="card-body">
+                        <h5 class="card-title">$150.30</h5>
+                        <p>Book Title Here</p>
+                        <button class="btn btn-warning btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="../asset/img/thriller4.jpeg " class="card-img-top" alt="Product">
+                    <div class="card-body">
+                        <h5 class="card-title">$150.30</h5>
+                        <p>Book Title Here</p>
+                        <button class="btn btn-warning btn-sm">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><br><br>
+    <div class="footer">
+        <p>&copy; 2024 Library Management System. All Rights Reserved.</p>
+    </div>
+    
+
+    <!-- Bootstrap JS -->
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

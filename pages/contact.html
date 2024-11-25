@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library Management System</title>
+  <!-- Bootstrap CSS -->
+  <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- style css  -->
+  <link rel="stylesheet" href="../style.css">
+  <!-- bootstrap js  -->
+  <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+   <!-- Bootstrap Icons and JS -->
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+  <style>
+    .back-btn {
+      font-size: 16px;
+      color: black;
+      text-decoration: none;
+      margin-bottom: 20px;
+    }
+
+    .header {
+      text-align: center;
+      font-family: 'Georgia', serif;
+      font-style: italic;
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    body {
+      background: linear-gradient(135deg, #9b59b6, #34495e); /* Gradient background */
+      color: white;
+      font-family: Arial, sans-serif;
+      height: 100vh;
+    }
+
+    .contact-container {
+      margin-top: 50px;
+    }
+
+    .contact-card {
+      background-color: rgba(255, 255, 255, 0.1); /* Transparent card background */
+      border-radius: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
+
+    .contact-details {
+      background-color: #b089f9; /* Darker purple for contact box */
+      border-radius: 10px;
+      padding: 15px;
+      color: white;
+    }
+
+    .contact-details .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .contact-details .contact-item i {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    .contact-details .contact-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .cnt {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+h1 {
+    color: #333;
+    /* margin-bottom: 60px; */
+}
+
+iframe {
+    width: 80%;
+    height: 500px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <!-- Back Button -->
+    <a href="../index.html" class=" btn btn-black"><i class="bi bi-arrow-left-short"></i> Back</a>
+
+    <!-- Header -->
+    <div class="header">
+      Library Management <br> System
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="container contact-container">
+        <div class="row justify-content-center">
+          <!-- Left Column: Contact Form -->
+          <div class="col-lg-6 col-md-8">
+            <div class="contact-card">
+              <h5 class="text-center mb-4">Message</h5>
+              <form>
+                <div class="mb-3">
+                  <input type="text" class="form-control" placeholder="Your name..." required>
+                </div>
+                <div class="mb-3">
+                  <input type="email" class="form-control" placeholder="Your email..." required>
+                </div>
+                <div class="mb-3">
+                  <input type="tel" class="form-control" placeholder="Your phone..." required>
+                </div>
+                <div class="mb-3">
+                  <textarea class="form-control" rows="4" placeholder="Your message..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+              </form>
+            </div>
+          </div>
+          <!-- Right Column: Contact Info -->
+          <div class="col-lg-4 col-md-8 mt-4 mt-lg-0">
+            <div class="contact-card">
+              <h5 class="text-center mb-4">Contact Info</h5>
+              <div class="contact-details">
+                <!-- Email -->
+                <div class="contact-item">
+                  <i class="bi bi-envelope-fill"></i>
+                  <span>library123@gmail.com</span>
+                </div>
+                <!-- Phone -->
+                <div class="contact-item">
+                  <i class="bi bi-telephone-fill"></i>
+                  <span>9678987698</span>
+                </div>
+                <!-- Working Hours -->
+                <div class="contact-item">
+                  <i class="bi bi-clock-fill"></i>
+                  <span>09:00 - 18:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+            </div>
+          </div>
+        </div>
+    </div>
+    
+
+    <!-- map -->
+<section>
+<div class="container cnt">
+ <h1>LOCATION MAP</h1>
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5487.684538604371!2d76.26339382657193!3d11.
+ 668198776313538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba609e2f0050cb7%3A0x864ee56e44adcc10!2sLe%20
+ Sapphire%20Hotel%20%26%20Restaurant!5e0!3m2!1sen!2sin!4v1726934974213!5m2!1sen!2sin" 
+ style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</section>
+
+
+
+<!-- -------- footer --------  -->
+<div class="footer">
+    <p>&copy; 2024 Library Management System. All Rights Reserved.</p>
+    <p><a href="./myaccount.html" class="text-white">login</a> | <a href="./contact.html" class="text-white">Contact</a> | <a href="./membership.html" class="text-white">Membership</a></p>
+  </div>
+
+ 
+</body>
+</html>
